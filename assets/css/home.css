@@ -1,4 +1,74 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0 20%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* input field changes */
+label {
+  display: block;
+  color: grey;
+  font-weight: 600;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
+input,
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+input#due-date,
+select#category.pl-0,
+::placeholder {
+  color: lightgray;
+  font-weight: 600;
+}
+
+#divider {
+  height: inherit;
+  border: 1px solid lightgray;
+}
+
+/* Genric classes */
+.display-flex {
+  display: flex;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+/* Heading styling */
+#heading {
+  color: grey;
+  margin-top: 1rem;
+}
+
+#heading > h1 > center {
+  font-weight: 600;
+}
+
+/* add task form styling */
+.border--top {
+  border-top: 0.1rem solid lightgray;
+}
+
+.border--bottom {
+  border-bottom: 0.1rem solid lightgray;
+}
+
+.border--right {
+  border-right: 0.1rem solid lightgray;
 }
