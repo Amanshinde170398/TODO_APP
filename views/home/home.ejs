@@ -51,11 +51,59 @@
             <input type="date" id="due-date" name="due-date" />
           </div>
         </div>
-        <div id="add-task" class="mt-2">
-          <button type="submit">ADD TASK</button>
+        <div id="add-task-submit" class="mt-2">
+          <button type="submit" class="btn btn-dark pl-4 pr-4">
+            <i class="fa-solid fa-plus"></i> <span>ADD TASK</span>
+          </button>
         </div>
       </form>
     </section>
+    <section>
+      <form action="" method="delete">
+        <div id="task-list" class="mt-5">
+          <div class="border--top pt-3 task-detail mb-3">
+            <div class="display-flex">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" />
+                <label class="form-check-label ml-2" for="flexCheckDefault">
+                  Task 1
+                </label>
+              </div>
+              <div class="task-tag"><span>WORK</span></div>
+            </div>
+            <div class="task-due-date ml-4">
+              <i class="fa-solid fa-calendar-days"></i
+              ><span class="ml-2">MAY 2, 2019</span>
+            </div>
+          </div>
+
+          <div class="border--top pt-3 task-detail mb-3">
+            <div class="display-flex">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" />
+                <label class="form-check-label ml-2" for="flexCheckDefault">
+                  Task 2
+                </label>
+              </div>
+              <div class="task-tag"><span>WORK</span></div>
+            </div>
+            <div class="task-due-date ml-4">
+              <i class="fa-solid fa-calendar-days"></i
+              ><span class="ml-2">MAY 2, 2019</span>
+            </div>
+          </div>
+        </div>
+        <div id="delete-task" class="mt-2">
+          <button type="submit" class="btn btn-danger">
+            <i class="fa-solid fa-trash-can"></i> <span>DELETE TASKS</span>
+          </button>
+        </div>
+      </form>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/8f5756dcce.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
