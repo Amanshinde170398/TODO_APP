@@ -72,3 +72,63 @@ select#category.pl-0,
 .border--right {
   border-right: 0.1rem solid lightgray;
 }
+
+/* Add Button styling */
+
+#add-task-submit span,
+#delete-task span {
+  font-size: larger;
+}
+
+/* task list styling */
+
+#list-task {
+  margin-top: 5rem;
+}
+
+.task-detail input[type="checkbox"] {
+  width: fit-content;
+}
+
+.task-detail > div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-tag {
+  padding: 0.5rem 1rem;
+  background-color: purple;
+  margin-right: 1rem;
+  color: white;
+}
+
+.task-due-date {
+  color: #c6c6c6;
+  font-weight: 600;
+}
+
+#add-task-submit {
+  position: relative;
+  top: 1rem;
+  left: 16.2rem;
+}
+
+#delete-task {
+  position: absolute;
+  top: 14.41rem;
+  left: 45rem;
+}
+/* 
+  position: relative;
+    top: 1rem;
+    left: 15.5rem;
+}
+*/
+
+/* 
+      position: absolute;
+    top: 14.41rem;
+    left: 45rem;
+*/
+
+/*     padding: 0.4rem 1.7rem; */
