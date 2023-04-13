@@ -29,10 +29,15 @@ select {
   outline: none;
 }
 
+input#description,
 input#due-date,
-select#category.pl-0,
+select#category.pl-0 {
+  color: grey;
+  font-weight: 600;
+}
+
 ::placeholder {
-  color: lightgray;
+  color: lightgrey;
   font-weight: 600;
 }
 
