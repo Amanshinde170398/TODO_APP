@@ -66,12 +66,15 @@
           <div class="border--top pt-3 task-detail mb-3">
             <div class="display-flex">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" />
+                <input class="form-check-input" type="checkbox"
+                name="checkbox_id" value="<%= todo['_id'] %>"" />
                 <label class="form-check-label ml-2" for="flexCheckDefault">
                   <%= todo["description"]%>
                 </label>
               </div>
-              <div class="task-tag"><span><%= todo["category"]%></span></div>
+              <div class="task-tag task-tag-<%= todo['category']%>">
+                <span><%= todo["category"]%></span>
+              </div>
             </div>
             <div class="task-due-date ml-4">
               <i class="fa-solid fa-calendar-days"></i

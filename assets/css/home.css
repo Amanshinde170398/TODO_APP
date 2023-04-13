@@ -101,12 +101,33 @@ select#category.pl-0 {
 }
 
 .task-tag {
-  padding: 0.5rem 1rem;
-  background-color: purple;
   margin-right: 1rem;
   color: white;
 }
 
+.task-tag-personal {
+  padding: 0.5rem 1rem;
+  background-color: purple;
+}
+
+.task-tag-school {
+  padding: 0.5rem 1.6rem;
+  background-color: orange;
+}
+
+.task-tag-work {
+  padding: 0.5rem 2.3rem;
+  background-color: green;
+}
+
+.task-tag-cleaning {
+  padding: 0.5rem 1.1rem;
+  background-color: lightskyblue;
+}
+.task-tag-other {
+  padding: 0.5rem 2rem;
+  background-color: goldenrod;
+}
 .task-due-date {
   color: #c6c6c6;
   font-weight: 600;
