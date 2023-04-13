@@ -1,15 +1,20 @@
-let todos = [];
+const Todo = require("../models/todo");
 
-module.exports.home = function (req, res) {
+module.exports.home = async (req, res) => {
+  let todos = await Todo.find({});
   return res.render("home/home", { title: "home", todos: todos });
 };
 
 module.exports.create = function (req, res) {
-  todos.push(req.body);
+  Todo.create({
+    description: req.body.description,
+    category: req.body.category,
+    due_date: req.body.due_date,
+  });
   res.redirect("/");
 };
 
-module.exports.delete = function (req, res) {
-  todos.pop();
+module.exports.delete = async (req, res) => {
+  await Todo.deleteOne({ _id: req.body.checkbox_id });
   res.redirect("/");
 };
