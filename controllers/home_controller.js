@@ -2,7 +2,7 @@ const Todo = require("../models/todo");
 
 module.exports.home = async (req, res) => {
   let todos = await Todo.find({});
-  return res.render("home/home", { title: "home", todos: todos });
+  return res.render("home/home", { todos: todos });
 };
 
 module.exports.create = function (req, res) {
