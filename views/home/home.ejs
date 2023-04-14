@@ -79,7 +79,9 @@
             </div>
             <div class="task-due-date ml-4">
               <i class="fa-solid fa-calendar-days"></i
-              ><span class="ml-2"><%= todo["due_date"]%></span>
+              ><span class="ml-2"
+                ><%= todo["due_date"].toLocaleDateString()%></span
+              >
             </div>
           </div>
           <%}%>
